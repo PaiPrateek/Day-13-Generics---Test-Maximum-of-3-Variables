@@ -15,6 +15,7 @@ namespace Max_of_3
             //Test Case-3 : Max at 3rd Position
             Console.WriteLine(Program.MaxIntegerNumber(78, 43, 92));
         }
+        // Creating method to find the max from the given integer
         public static int MaxIntegerNumber(int FirstValues, int SecondValue, int ThirdValue)
         {
             if (FirstValues.CompareTo(SecondValue) > 0 && FirstValues.CompareTo(ThirdValue) > 0 ||

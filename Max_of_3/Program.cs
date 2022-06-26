@@ -19,7 +19,7 @@ namespace Max_of_3
             GenericMaximun<double> genericfloat = new GenericMaximun<double>(doubleArray);
             genericfloat.PrintMaxValue();
 
-            //Double type data
+            //String type data
             string[] strinArray = { "12", "56", "96", "85", "35"  };
             GenericMaximun<string> genericstring = new GenericMaximun<string>(strinArray);
             genericstring.PrintMaxValue();

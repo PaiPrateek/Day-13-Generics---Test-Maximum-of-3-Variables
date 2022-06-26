@@ -6,39 +6,50 @@ namespace Max_of_3
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Find Max From the Given Integer");
-            //Test Case-1 :  Max at 1st Position
-            Console.WriteLine(Program.MaxIntegerNumber(65, 25, 55));
 
-            //Test Case-2 : Max at 2nd Position
-            Console.WriteLine(Program.MaxIntegerNumber(36, 85, 74));
+            Console.WriteLine("Find Max Number :");
 
-            //Test Case-3 : Max at 3rd Position
-            Console.WriteLine(Program.MaxIntegerNumber(78, 43, 92));
+            int[] intArray = { 85, 63, 98 };
+            GenericMaximun<int> genericint = new GenericMaximun<int>(intArray);
+            genericint.PrintMaxValue();
 
-            Console.WriteLine("............................................");
-            Console.WriteLine("Find Max From the Given Floats");
+            double[] doubleArray = { 22.63, 33.65, 75.62 };
+            GenericMaximun<double> genericfloat = new GenericMaximun<double>(doubleArray);
+            genericfloat.PrintMaxValue();
 
-            //Test Case-1 : Max at 1st Position
-            Console.WriteLine(Program.MaxFloatNumber(8.32f, 5.84f, 7.63f));
+            //Console.WriteLine("Find Max From the Given Integer");
+            ////Test Case-1 :  Max at 1st Position
+            //Console.WriteLine(Program.MaxIntegerNumber(65, 25, 55));
 
-            //Test Case-2 : Max at 2nd Position
-            Console.WriteLine(Program.MaxFloatNumber(4.51f, 7.98f, 6.84f));
+            ////Test Case-2 : Max at 2nd Position
+            //Console.WriteLine(Program.MaxIntegerNumber(36, 85, 74));
 
-            //Test Case-3 : Max at 3rd Position
-            Console.WriteLine(Program.MaxFloatNumber(6.74f, 3.56f, 9.81f));
+            ////Test Case-3 : Max at 3rd Position
+            //Console.WriteLine(Program.MaxIntegerNumber(78, 43, 92));
 
-            Console.WriteLine("............................................");
-            Console.WriteLine("Find Max From the Given Strings");
+            //Console.WriteLine("............................................");
+            //Console.WriteLine("Find Max From the Given Floats");
 
-            //Test Case-1 :Max at 1st Position
-            Console.WriteLine(Program.MaxStringNumber("69", "28", "45"));
+            ////Test Case-1 : Max at 1st Position
+            //Console.WriteLine(Program.MaxFloatNumber(8.32f, 5.84f, 7.63f));
 
-            //Test Case-2 :Max at 2nd Position
-            Console.WriteLine(Program.MaxStringNumber("62", "75", "49"));
+            ////Test Case-2 : Max at 2nd Position
+            //Console.WriteLine(Program.MaxFloatNumber(4.51f, 7.98f, 6.84f));
 
-            //Test Case-3 :Max at 3rd Position
-            Console.WriteLine(Program.MaxStringNumber("21", "18", "35"));
+            ////Test Case-3 : Max at 3rd Position
+            //Console.WriteLine(Program.MaxFloatNumber(6.74f, 3.56f, 9.81f));
+
+            //Console.WriteLine("............................................");
+            //Console.WriteLine("Find Max From the Given Strings");
+
+            ////Test Case-1 :Max at 1st Position
+            //Console.WriteLine(Program.MaxStringNumber("69", "28", "45"));
+
+            ////Test Case-2 :Max at 2nd Position
+            //Console.WriteLine(Program.MaxStringNumber("62", "75", "49"));
+
+            ////Test Case-3 :Max at 3rd Position
+            //Console.WriteLine(Program.MaxStringNumber("21", "Banana", "35"));
         }
         // Creating method to find the max from the given integer
         public static int MaxIntegerNumber(int FirstValues, int SecondValue, int ThirdValue)

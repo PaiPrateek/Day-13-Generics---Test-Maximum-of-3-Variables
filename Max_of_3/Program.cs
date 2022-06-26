@@ -7,29 +7,35 @@ namespace Max_of_3
         static void Main(string[] args)
         {
 
-
             Console.WriteLine("Find Max Number :");
+
             //Integer type data
-            GenericMaximun<int> genericint = new GenericMaximun<int>(36, 53, 96);
-            genericint.Max_Method();
+            int[] intArray = { 85, 63, 98, 103 , 423, 325 };
+            GenericMaximun<int> genericint = new GenericMaximun<int>(intArray);
+            genericint.PrintMaxValue();
 
             //Double type data
-            GenericMaximun<double> genericdouble = new GenericMaximun<double>(63.23, 56.75, 86.41);
-            genericdouble.Max_Method();
+            double[] doubleArray = { 22.63, 33.65, 75.62, 56.23, 421.23 };
+            GenericMaximun<double> genericfloat = new GenericMaximun<double>(doubleArray);
+            genericfloat.PrintMaxValue();
 
-            //String type data
-            GenericMaximun<string> genericstring = new GenericMaximun<string>("81", "96", "63");
-            genericstring.Max_Method();
+            //Double type data
+            string[] strinArray = { "12", "56", "96", "85", "35"  };
+            GenericMaximun<string> genericstring = new GenericMaximun<string>(strinArray);
+            genericstring.PrintMaxValue();
 
             //Console.WriteLine("Find Max Number :");
+            ////Integer type data
+            //GenericMaximun<int> genericint = new GenericMaximun<int>(36, 53, 96);
+            //genericint.Max_Method();
 
-            //int[] intArray = { 85, 63, 98 };
-            //GenericMaximun<int> genericint = new GenericMaximun<int>(intArray);
-            //genericint.PrintMaxValue();
+            ////Double type data
+            //GenericMaximun<double> genericdouble = new GenericMaximun<double>(63.23, 56.75, 86.41);
+            //genericdouble.Max_Method();
 
-            //double[] doubleArray = { 22.63, 33.65, 75.62 };
-            //GenericMaximun<double> genericfloat = new GenericMaximun<double>(doubleArray);
-            //genericfloat.PrintMaxValue();
+            ////String type data
+            //GenericMaximun<string> genericstring = new GenericMaximun<string>("81", "96", "63");
+            //genericstring.Max_Method();
 
             //Console.WriteLine("Find Max From the Given Integer");
             ////Test Case-1 :  Max at 1st Position

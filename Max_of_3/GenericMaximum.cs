@@ -73,7 +73,6 @@ namespace Max_of_3
             return default;
         }
 
-
         public T Max_Method()
         {
             T Max = GenericMaximun<T>.MaxValue(this.FirstValue, this.SecondValue, this.ThirdValue);
